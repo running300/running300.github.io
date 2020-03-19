@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>蒋宏伟</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="header"></header>
+
+    <article class="container">
+        <section class="side" id="side">
+            <style>
+                @media (min-width: 	750px){
+                    .switch{position:relative;display:inline-block!important;width:60px;height:34px;}
+                    .switch input{display:none;}
+                    .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;-webkit-transition:.4s;transition:.4s;}
+                    .slider:before{position:absolute;content:"";height:26px;width:26px;left:4px;bottom:4px;background-color:white;-webkit-transition:.4s;transition:.4s;}
+                    input:checked + .slider{background-color:#1abc9c;}
+                    input:focus + .slider{box-shadow:0 0 1px #1abc9c;}
+                    input:checked + .slider:before{-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px);}.slider.round{border-radius:34px;}
+                    .slider.round:before{border-radius:50%;}
+                }
+            </style>
+            <!-- 左侧固定开关，记得及时删除这段代码 End-->
+
+            <!-- 个人肖像 -->
+            <section class="me">
+                <img class="avatar" style="margin-bottom: 8px;" width='120px' src="./assets/images/me.jpg" loading="loading()">
+                <h1 class="name">蒋宏伟</h1>
+            </section>
+
+            <!-- 基本信息 -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>个人信息</label>
+                        <span>蒋宏伟 / 男 / 26岁</span>  
+                    </li>
+                    <li>
+                        <label>地址</label>
+                        <span>湖南永州</span>
+                    </li>
+                    <li>
+                        <label>英语水平</label>
+                        <span>CET-4</span>
+                    </li>
+                    <li>
+                        <label>计算机水平</label>
+                        <span>国家二级计算机考试</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 联系方式 -->
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>联系方式</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>手机</label>
+                        <a href="tel:19958279087" target="_blank">19958279087</a>
+                    </li>
+                    <li>
+                        <label>邮箱</label>
+                        <a href="mailto:j19958279087@163.com" target="_blank">j19958279087@163.com</a>
+                    </li>
+                    <li>
+                        <label>Github</label>
+                        <a href="https://github.com/running300" target="_blank">github.com/running300</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 技能点 -->
+            <section class="skill info-unit">
+                <h2>
+                    <i class="fa fa-code" aria-hidden="true"></i>技能点</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>PS</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>HTML</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>CSS</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>JavaScript</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Vue</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>小程序</label>
+                        <progress value="60" max="100"></progress>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="qrcode info-unit">
+                <h2><i class="fa fa-qrcode" aria-hidden="true"></i>二维码</h2>
+                <hr/>
+                <div style="text-align: center; padding-top: 15px;">
+                    <img  src="./assets/images/wx.jpg" style="width: 60%;" alt="">
+                </div>
+                
+            </section>
+
+            <!-- 技术栈 -->
+            <!-- <div class="stack info-unit">
+                    <h2><i class="fa fa-code" aria-hidden="true"></i>其他</h2>
+                    <hr/>
+                    <ul>
+                        <li>
+                            <label>前端</label>
+                            <span>React、jQuery、微信小程序、Bootstrap、SASS、LESS</span>
+                        </li>
+                        <li>
+                            <label>后端</label>
+                            <span>Node.js、MySQL、MongoDB、WordPress、ThinkPHP</span>
+                        </li>
+                        <li>
+                            <label>其他</label>
+                            <span>Git、SVN、Markdown</span>
+                        </li>
+                    </ul>
+                </div> -->
+        </section>
+
+        <section class="main">
+
+            <!-- 教育经历 -->
+            <section class="edu info-unit">
+                <h2>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>教育经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>湖南工学院 - 机械电子工程（本科）</span>
+                            <time>2014.9-2018.7</time>
+                        </h3>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 工作经历 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>工作经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[经历1]绍致信息科技有限公司－网页美工</span>
+                            <time>2019.4 - 2019.11</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>[图片/图标的制作,以及和程序员之间的配合]
+                                <p>+ <a href="https://www.zcool.com.cn/u/19033956">站酷作品</a> </p>
+                            </li>
+                            <li>[在工作中与程序员接触后,发现自己对前端有浓厚的兴趣]
+                                <p>+ 同事评价: 耐心好学，积极向上，有团队意识</p>
+                        </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 项目经验 -->
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-terminal" aria-hidden="true"></i>个人项目</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[项目1]小米官网仿写</span>
+                            <span class="link">
+                                <a href="https://github.com/running300/mishouye" target="_blank">code</a>
+                            </span>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：HTML + CSS</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]为了熟悉HTML和CSS的布局
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [问题总结]伪类的使用,postion布局,浮动和清除浮动(overflow(触发BFC方式),内嵌法div(clear：both;),伪元素清除浮动),资源的路径等
+                                <br/>
+                            </li>             
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目2]基于ES6制作的像素鸟小游戏</span>
+                            <span class="link">
+                                <a href="https://github.com/running300/xiangsuniao" target="_blank">code</a>
+                            </span>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：HTML + CSS + ES6</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]为了熟悉ES6类的使用
+                                <br/>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [问题总结]拆分类的时候,不准确,程序无法运行;子类对父类的继承;
+                                <br/>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目3]基于Vue仿写的去哪儿网</span>
+                            <span class="link">
+                                <a href="https://github.com/running300/qunaer" target="_blank">code</a>
+                            </span>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：HTML + CSS + stylus + Vue + Vant-UI</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]为了更好的把Vue的知识实战运用
+                                <br/>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [问题总结]文件结构的划分,rem适配,fastclick的使用(解决300ms的问题),swiper插件,vue-router,axios,vuex,及图标的引入,组件之间的相互通信(props,自定义事件,vuex),mock模拟数据,Vant-UI的按需加载和使用,组件拆封,better-scroll的使用.
+                                <br/>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目4]微信小程序自己写的豆瓣网</span>
+                            <span class="link">
+                                <a href="https://github.com/running300/wxdouban" target="_blank">code</a>
+                            </span>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：HTML + CSS + Ajax </li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]自学如何制作微信小程序/熟悉里面的大概流程和套路
+                                <br/>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [问题总结]rpx和px之间的关系,数据通信,重置数据setData,flex布局再这里面会比较好用,ajax请求数据(es6的解构赋值好用),生命周期函数的使用(数据请求在onUnload里面请,上拉触底onReachBottom里等),模板的使用,wx小程序提供的组件的使用,最主要的还是要查文档.
+                                <br/>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </section>
+
+            <!-- 自我评价 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>自我评价/期望</h2>
+                <hr/>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[精心做好自己的1万小时,享受生活,努力提升自己]
+                </p>
+            </section>
+        </section>
+    </article>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
